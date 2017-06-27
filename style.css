@@ -62,10 +62,13 @@ header a:hover {
   text-decoration: underline;
 }
 
-@media only screen and (max-device-width: 500px;) {
+@media only screen and (max-width: 500px) {
   header a {
     font-size: 1rem;
   }
+
+  .bullet 
+  
   .banner {
     background-image: url('mobilebanner.png');
   }
