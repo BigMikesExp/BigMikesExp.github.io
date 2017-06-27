@@ -62,7 +62,7 @@ header a:hover {
   text-decoration: underline;
 }
 
-@media only screen and (max-device-width: 1000px;) {
+@media only screen and (max-device-width: 30rem;) {
   header a {
     font-size: 1rem;
   }
