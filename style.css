@@ -1,11 +1,40 @@
 html {
   font-size: 16px;
+  color: white;
+}
+
+body {
+  background-color: black;
 }
 
 header {
+ background-color: white;
+ height: 4rem;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.header {
   display: flex;
-  justify-content: center;
-  align-items: space-between;
+  justify-content: flex-start;
+}
+
+.bullet {
+  font-size: 2rem;
+  color: black;
+}
+
+.banner {
+  background-image: url('mikesxp.png');
+  background-repeat: no-repeat;
+  height: 48rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header h1 {
@@ -13,5 +42,20 @@ header h1 {
 }
 
 header li {
-  list-decoration: none;
+  list-style: none;
+  padding: 0 1rem;
+}
+
+header a {
+  font-size: 1.25rem;
+  font-family: 'Righteous', sans-serif;
+  text-decoration: none;
+  color: maroon;
+  display: flex;
+  align-items: center;
+}
+
+header a:hover {
+  color: black;
+  text-decoration: underline;
 }
