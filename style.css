@@ -59,3 +59,9 @@ header a:hover {
   color: black;
   text-decoration: underline;
 }
+
+@media only screen and (min-width: 470px) {
+  .banner {
+    background-image: url('mobilebanner.png');
+  }
+}
