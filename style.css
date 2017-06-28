@@ -64,14 +64,15 @@ header a:hover {
 
 @media only screen and (min-device-width:300px) and (max-device-width: 480px) {
   header a {
-    font-size: 1rem;
+    font-size: .5rem;
   }
 
   .bullet {
     font-size: 1rem;
+    padding: 0 .25rem;
   }
 
   .banner {
     background-image: url('cellphone.png');
+    height: 7.9rem;
   }
-}
