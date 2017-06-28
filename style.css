@@ -32,6 +32,7 @@ header {
   margin-top: 4rem;
   background-image: url('mikesxp.png');
   background-repeat: no-repeat;
+  background-size: cover;
   height: 48rem;
 }
 
