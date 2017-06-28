@@ -14,6 +14,8 @@ header {
  display: flex;
  justify-content: center;
  align-items: center;
+ position: fixed;
+ z-index: 1;
 }
 
 .header {
@@ -27,6 +29,7 @@ header {
 }
 
 .banner {
+  margin-top: 4rem;
   background-image: url('mikesxp.png');
   background-repeat: no-repeat;
   height: 48rem;
@@ -35,6 +38,7 @@ header {
 ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 header h1 {
@@ -76,3 +80,10 @@ header a:hover {
     background-image: url('cellphone.png');
     height: 7.9rem;
   }
+
+  header li {
+    padding: 0;
+  }
+
+}
+
