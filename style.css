@@ -17,7 +17,6 @@ header {
  position: fixed;
  z-index: 1;
 }
-
 .header {
   display: flex;
   justify-content: flex-start;
@@ -29,11 +28,33 @@ header {
 }
 
 .banner {
+  flex-shrink: 1;
+  flex-grow: 1;
   margin-top: 4rem;
+  margin-bottom: 2rem;
   background-image: url('mikesxp.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  overflow: visible;
   height: 48rem;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  align-content: space-between;
+
+}
+
+video {
+  flex-shrink: 1;
+  flex-grow: 1;
+  border: 1px solid white;
+  border-radius: 4px;
+  height: 25rem;
+  width: 50%;
+  align-self: center;
 }
 
 ul {
@@ -77,9 +98,20 @@ header a:hover {
     padding: 0 .25rem;
   }
 
-  .banner {
-    background-image: url('cellphone.png');
-    height: 7.9rem;
+  header li {
+    padding: 0;
+  }
+
+}
+
+@media only screen and (max-device-width: 299px) {
+  header a {
+    font-size: .5rem;
+  }
+
+  .bullet {
+    font-size: 1rem;
+    padding: 0 .25rem;
   }
 
   header li {
@@ -97,11 +129,6 @@ header a:hover {
   .bullet {
     font-size: 1rem;
     padding: 0 .25rem;
-  }
-
-  .banner {
-    background-image: url('cellphone.png');
-    height: 7.9rem;
   }
 
   header li {
