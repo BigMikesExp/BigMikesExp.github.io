@@ -1,10 +1,11 @@
 html {
   font-size: 16px;
   color: white;
+  background-color: black;
 }
 
 body {
-  background-color: black;
+
 }
 
 header {
@@ -17,6 +18,7 @@ header {
  position: fixed;
  z-index: 1;
 }
+
 .header {
   display: flex;
   justify-content: flex-start;
@@ -35,16 +37,14 @@ header {
   background-image: url('mikesxp.png');
   background-repeat: no-repeat;
   background-size: contain;
-  overflow: visible;
-  height: 48rem;
+  min-height: 55rem;
+  height: auto;
+  width: 100%;
 }
 
-.banner-container {
+.site-container {
   display: flex;
   flex-direction: column;
-  flex-basis: auto;
-  align-content: space-between;
-
 }
 
 video {
@@ -52,14 +52,17 @@ video {
   flex-grow: 1;
   border: 1px solid white;
   border-radius: 4px;
-  height: 25rem;
-  width: 50%;
+  min-height: 5rem;
+  min-width: 7rem;
+  max-height: 25rem;
+  max-width: 100%;
+  height: auto;
+  width: auto;
   align-self: center;
 }
 
 ul {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
@@ -70,7 +73,8 @@ header h1 {
 header li {
   flex-shrink: 1;
   list-style: none;
-  padding: 0 1rem;
+  padding: 0 .5rem;
+  align-content: center;
 }
 
 header a {
@@ -81,6 +85,13 @@ header a {
   color: maroon;
   display: flex;
   align-items: center;
+  text-align: center;
+  padding: 0 .5rem;
+}
+
+header a:nth-child(2n+2) {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
 }
 
 header a:hover {
@@ -88,14 +99,47 @@ header a:hover {
   text-decoration: underline;
 }
 
-@media only screen and (min-width:300px) and (max-width: 480px) {
+@media only screen and (max-width: 299px) {
   header a {
     font-size: .5rem;
   }
 
-  .bullet {
-    font-size: 1rem;
-    padding: 0 .25rem;
+  header li {
+    padding: 0;
+  }
+
+}
+
+
+@media only screen and (min-width:300px) and (max-width: 480px) {
+  header a {
+    font-size: .625rem;
+  }
+
+  header li {
+    padding: 0;
+  }
+
+  video {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width:481px) and (max-width: 720px) {
+  header a {
+    font-size: .75rem;
+  }
+
+  header li {
+    padding: 0;
+  }
+
+}
+
+@media only screen and (min-width:721px) and (max-width: 900px) {
+  header a {
+    font-size: .875rem;
   }
 
   header li {
@@ -109,11 +153,6 @@ header a:hover {
     font-size: .5rem;
   }
 
-  .bullet {
-    font-size: 1rem;
-    padding: 0 .25rem;
-  }
-
   header li {
     padding: 0;
   }
@@ -123,12 +162,29 @@ header a:hover {
 
 @media only screen and (min-device-width:300px) and (max-device-width: 480px) {
   header a {
-    font-size: .5rem;
+    font-size: .625rem;
   }
 
-  .bullet {
-    font-size: 1rem;
-    padding: 0 .25rem;
+  header li {
+    padding: 0;
+  }
+
+}
+
+@media only screen and (min-device-width:481px) and (max-device-width: 720px) {
+  header a {
+    font-size: .75rem;
+  }
+
+  header li {
+    padding: 0;
+  }
+
+}
+
+@media only screen and (min-device-width:721px) and (max-device-width: 900px) {
+  header a {
+    font-size: .875rem;
   }
 
   header li {
